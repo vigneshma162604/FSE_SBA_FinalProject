@@ -1,0 +1,12 @@
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_BL.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_BL.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_BL.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_BL.Tests\bin\Debug\ProjectManagement_BL.Tests.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_BL.Tests\bin\Debug\ProjectManagement_BL.Tests.pdb
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_BL.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_BL.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_BL.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_BL.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_BL.Tests\obj\Debug\ProjectManagement_BL.Tests.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_BL.Tests\obj\Debug\ProjectManagement_BL.Tests.pdb
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_BL.Tests\obj\Debug\ProjectManagement_BL.Tests.csprojResolveAssemblyReference.cache

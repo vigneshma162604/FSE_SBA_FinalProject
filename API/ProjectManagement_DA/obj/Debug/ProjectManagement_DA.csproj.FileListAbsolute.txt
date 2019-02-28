@@ -1,0 +1,12 @@
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_DA\bin\Debug\ProjectManagement_DA.dll.config
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_DA\bin\Debug\ProjectManagement_DA.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_DA\bin\Debug\ProjectManagement_DA.pdb
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_DA\bin\Debug\EntityFramework.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_DA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_DA\bin\Debug\ProjectManagement_Entity.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_DA\bin\Debug\ProjectManagement_Entity.pdb
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_DA\bin\Debug\EntityFramework.xml
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_DA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_DA\obj\Debug\ProjectManagement_DA.csprojResolveAssemblyReference.cache
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_DA\obj\Debug\ProjectManagement_DA.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_DA\obj\Debug\ProjectManagement_DA.pdb

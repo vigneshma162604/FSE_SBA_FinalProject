@@ -1,0 +1,5 @@
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_Entity\bin\Debug\ProjectManagement_Entity.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_Entity\bin\Debug\ProjectManagement_Entity.pdb
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_Entity\obj\Debug\ProjectManagement_Entity.dll
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_Entity\obj\Debug\ProjectManagement_Entity.pdb
+C:\Vignesh\Assignment\FinalProject\API\ProjectManagement_Entity\obj\Debug\ProjectManagement_Entity.csprojResolveAssemblyReference.cache

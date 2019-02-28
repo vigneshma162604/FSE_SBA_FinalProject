@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectManageModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblParentTask">
+    <Key>
+      <PropertyRef Name="ParentID" />
+    </Key>
+    <Property Name="ParentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentTask" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="tblProject">
+    <Key>
+      <PropertyRef Name="ProjectID" />
+    </Key>
+    <Property Name="ProjectID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectName" Type="varchar" MaxLength="30" />
+    <Property Name="StartDt" Type="date" />
+    <Property Name="EndDt" Type="date" />
+    <Property Name="Priority" Type="int" />
+  </EntityType>
+  <EntityType Name="tblTask">
+    <Key>
+      <PropertyRef Name="TaskID" />
+    </Key>
+    <Property Name="TaskID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="ProjectID" Type="int" />
+    <Property Name="Task" Type="varchar" MaxLength="30" />
+    <Property Name="StartDt" Type="date" />
+    <Property Name="EndDt" Type="date" />
+    <Property Name="Priority" Type="int" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="30" />
+    <Property Name="LastName" Type="varchar" MaxLength="30" />
+    <Property Name="EmployeeID" Type="varchar" MaxLength="30" />
+    <Property Name="ProjectID" Type="int" />
+    <Property Name="TaskID" Type="int" />
+  </EntityType>
+  <Association Name="FK_tblTask_tblParentTask_ParentID">
+    <End Role="tblParentTask" Type="Self.tblParentTask" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblTask" Type="Self.tblTask" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblParentTask">
+        <PropertyRef Name="ParentID" />
+      </Principal>
+      <Dependent Role="tblTask">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTask_tblProject_ProjectID">
+    <End Role="tblProject" Type="Self.tblProject" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblTask" Type="Self.tblTask" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject">
+        <PropertyRef Name="ProjectID" />
+      </Principal>
+      <Dependent Role="tblTask">
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUser_tblProject_ProjectID">
+    <End Role="tblProject" Type="Self.tblProject" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject">
+        <PropertyRef Name="ProjectID" />
+      </Principal>
+      <Dependent Role="tblUser">
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUser_tblTask_TaskID">
+    <End Role="tblTask" Type="Self.tblTask" Multiplicity="0..1" />
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTask">
+        <PropertyRef Name="TaskID" />
+      </Principal>
+      <Dependent Role="tblUser">
+        <PropertyRef Name="TaskID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProjectManageModelStoreContainer">
+    <EntitySet Name="tblParentTask" EntityType="Self.tblParentTask" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblProject" EntityType="Self.tblProject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTask" EntityType="Self.tblTask" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tblTask_tblParentTask_ParentID" Association="Self.FK_tblTask_tblParentTask_ParentID">
+      <End Role="tblParentTask" EntitySet="tblParentTask" />
+      <End Role="tblTask" EntitySet="tblTask" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTask_tblProject_ProjectID" Association="Self.FK_tblTask_tblProject_ProjectID">
+      <End Role="tblProject" EntitySet="tblProject" />
+      <End Role="tblTask" EntitySet="tblTask" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUser_tblProject_ProjectID" Association="Self.FK_tblUser_tblProject_ProjectID">
+      <End Role="tblProject" EntitySet="tblProject" />
+      <End Role="tblUser" EntitySet="tblUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUser_tblTask_TaskID" Association="Self.FK_tblUser_tblTask_TaskID">
+      <End Role="tblTask" EntitySet="tblTask" />
+      <End Role="tblUser" EntitySet="tblUser" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
